@@ -4,22 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>How's the air quality today?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Audiowide&family=Cherry+Bomb+One&family=DM+Serif+Text:ital@0;1&family=Geist+Mono:wght@100..900&family=Jersey+20&family=Lexend+Deca:wght@100..900&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Quintessential&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <body>
     <div id="airQualityInfo"></div> 
-    <div class="skyline" id="front">
+    <section class="fog">
+      <div class="fog-container">
+        <div class="fog-img fog-img-first"></div>
+        <div class="fog-img fog-img-second"></div>
+      </div>
+    </section>
+    <div class="skyline" id="front"></div>
+    <div id="building-templates" style="display: none;">
       <div class="building" id="building-1">
         <div class="one-top"></div>
         <div class="one-mid"></div>
         <div class="one-bottom"></div>
         <div class="one-base"></div>
       </div>
-      <div class="building" id="building-2"></div>
+      <div class="building" id="building-2">
+        <div class="two-a"></div>
+        <div class="two-b"></div>
+      </div>
       <div class="building" id="building-3"></div>
-      <div class="building" id="building-4"></div>
+      <div class="building" id="building-4">
+        <div class="four-a"></div>
+        <div class="four-b"></div>
+        <div class="four-c window-wrap">
+          <div class="four-windows"></div>
+          <div class="four-windows"></div>
+          <div class="four-windows"></div>
+          <div class="four-windows"></div>
+        </div>
+      </div>
       <div class="building" id="building-5"></div>
+      <div class="building" id="building-6"></div>
     </div>
   <script src="script.js"></script>
 </body>
